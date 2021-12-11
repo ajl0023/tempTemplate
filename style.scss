@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+@font-face {
+  font-family: "Century Normal";
+  src: url("./CENTURY.ttf") format("truetype");
+}
+.container {
+  width: 587px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Century Normal";
+  height: 900px;
+}
+.card-container {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+  padding: 2rem;
+}
+
+.image-container {
+  width: 400px;
+
+  height: 250px;
+  border: 1px solid black;
+}
+.header {
+  white-space: nowrap;
+  font-size: 1.65em;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.sub-container {
+  p {
+    font-style: italic;
+    font-size: 1em;
+  }
+}
+.sm-header {
+  padding: 10px;
+  text-align: center;
+}
+.mini-wrapper {
+  display: flex;
+  gap: 50px;
+  height: 50%;
+  transform: rotateZ(180deg);
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.mini {
+  width: 200px;
+}
+.mini-card-container {
+  display: flex;
+  font-weight: 900;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  &:nth-child(2) {
+    margin-top: 9rem;
+  }
+}
